@@ -44,7 +44,7 @@ Let's pause a moment to think about the different kinds of relationships we'll w
  
   - to implement `EngineRequirements.java`.  
   - a `FuelType` attribute to indicate what type of fuel it uses, and `double`s to store the current and maximum fuel levels (along with appropriate accessors for each).
-  - a constructor, which takes in initial values for the attributes named above and sets them appropriately
+  - a constructor, which takes in initial values for the attributes named above and sets them appropriately (please do not add additional parameters to your constructor)
   - a `refuel()` method which will reset the `Engine`'s current fuel level to the maximum, and which doesn't need to `return` anything
   - a `go()` which will decrease the current fuel level, print some useful information (e.g. remaining fuel level), and return `True` if the fuel level is above 0 and `False` otherwise.
 
@@ -69,7 +69,7 @@ Next, we'll set to work on the `Car` class. The `Car` class will need:
 
  - to implement `CarRequirements.java`.
  - an `ArrayList` where it will store the `Passenger`s currently onboard, and an `int` for the `Car`'s maximum capacity (since `ArrayList`s will expand as we add objects, we'll need to manually limit their size)
- - a constructor, which takes in an initial value for the `Car`'s maximum capacity and initializes an appropriately-sized `ArrayList`
+ - a constructor, which takes in an initial value for the `Car`'s maximum capacity and initializes an appropriately-sized `ArrayList` (please do not add additional parameters to your constructor)
  - accessor-like methods `public int getCapacity()` and `public int seatsRemaining()` that return the maximum capacity and remaining seats, respectively
  - `addPassenger(Passenger p)` and `removePassenger(Passenger p)` methods to add or remove a `Passenger` from the `Car` and return `True` if the operation was successful, and `False` otherwise. (_Hint: don't forget to check that there are seats available if someone wants to board, and to confirm that the `Passenger` is actually onboard before trying to remove them! If you encounter a problem, you should `return False`._)
  - and a final method `printManifest()` that prints out a list of all `Passenger`s aboard the car (or "This car is EMPTY." if there is no one on board).
@@ -90,7 +90,7 @@ Now we're in the home stretch! To assemble your `Train`, you'll need (at minimum
  -  to implement `TrainRequirements.java`
  -  an `Engine`
  -  an `ArrayList` to keep track of the `Car`s currently attached
- -  a constructor `Train(FuelType fuelType, double currentFuelLevel, double fuelCapacity, int nCars, int passengerCapacity)` which will initialize the `Engine` and `Car`s and store them
+ -  a constructor `Train(FuelType fuelType, double currentFuelLevel, double fuelCapacity, int nCars, int passengerCapacity)` which will initialize the `Engine` and `Car`s and store them (please do not add additional parameters to your constructor)
  -  a few accessors: 
      -  `public Engine getEngine()`
      -  `public Car getCar(int i)` to return the `i`th car
