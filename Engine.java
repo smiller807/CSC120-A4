@@ -25,10 +25,11 @@ public class Engine {
     Boolean go(double fuelLevel){
         if (fuelLevel == 0){
             System.out.println("Need to refuel");
+            return false;
         } else {
             fuelLevel -= 5;
+            return true;
         }
-        return null;
     }
 
 }
