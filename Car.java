@@ -41,8 +41,12 @@ public class Car {
         if(passengers.size() != capacity){
             passengers.add(p);
             return true;
-        }else {
-            System.out.println("No more passengers are allowed into the car.");
+        } else {
+            if(passengers.size() == capacity){
+                System.out.println("No more passengers allowed in the car.");
+            } else if (passengers.contains(p)){
+                System.out.println("Passengers is already in the car");
+            }
             return false;
         }
     }
